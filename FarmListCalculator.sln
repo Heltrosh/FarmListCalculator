@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmListCalculator", "FarmListCalculator\FarmListCalculator.csproj", "{05036AC7-6496-45B2-AAA6-36C31BDD2929}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05036AC7-6496-45B2-AAA6-36C31BDD2929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05036AC7-6496-45B2-AAA6-36C31BDD2929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05036AC7-6496-45B2-AAA6-36C31BDD2929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05036AC7-6496-45B2-AAA6-36C31BDD2929}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B9FA450-46A7-47C5-98CB-A96D1D9D003C}
+	EndGlobalSection
+EndGlobal
