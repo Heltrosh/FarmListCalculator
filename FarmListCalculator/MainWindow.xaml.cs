@@ -255,7 +255,7 @@ namespace FarmListCalculator
                 foreach (var target in fl.Targets)
                 {
                     target.RealDistance = target.Distance > 20 ? 20 + (target.Distance - 20) / TSCoefficient : target.Distance;
-                    int slowestSpeed = 20;
+                    double slowestSpeed = 20;
                     foreach (var unit in target.Units)
                     {
                         int speed = unitSpeeds.GetUnitSpeed(indexConverter.GetNameByIndex(true, CurrentTribe), unit.Key);
@@ -274,8 +274,6 @@ namespace FarmListCalculator
             {
                 foreach (var target in fl.Targets)
                 {
-                    if (target.TimeToRotate < delay * 60)
-                        continue;
                     int startsToRotate = 1;
                     if (target.TimeToRotate.HasValue)
                     {
