@@ -91,7 +91,8 @@ namespace FarmListCalculator
                 var farmListName = farmListNameNode.InnerText.Trim();
 
                 var farmListItems = new List<FarmListItem>();
-                var itemRows = wrapper.SelectNodes(".//tbody//tr[contains(@class, 'slot')]");
+                var itemRows = wrapper.SelectNodes(".//tbody//tr[contains(@class, 'slot') and not(contains(@class, 'disabled'))]");
+
                 if (itemRows != null)
                 {
                     foreach (var row in itemRows)
