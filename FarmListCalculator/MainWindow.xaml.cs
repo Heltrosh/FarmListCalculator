@@ -255,10 +255,14 @@ namespace FarmListCalculator
                 foreach (var target in fl.Targets)
                 {
                     target.RealDistance = target.Distance > 20 ? 20 + (target.Distance - 20) / TSCoefficient : target.Distance;
-                    double slowestSpeed = 20;
+                    double slowestSpeed = 50;
                     foreach (var unit in target.Units)
                     {
-                        int speed = unitSpeeds.GetUnitSpeed(indexConverter.GetNameByIndex(true, CurrentTribe), unit.Key);
+                        double speed = unitSpeeds.GetUnitSpeed(indexConverter.GetNameByIndex(true, CurrentTribe), unit.Key);
+                        if (chckArteSmall.IsChecked == true)
+                            speed = speed * 2;
+                        else if (chckArteLarge.IsChecked == true)
+                            speed = speed * 1.5;
                         if (speed < slowestSpeed)
                             slowestSpeed = speed;
                     }

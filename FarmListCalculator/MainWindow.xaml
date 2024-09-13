@@ -34,6 +34,8 @@
         <Button x:Name="btnGetUnits" Content="Fill Units" HorizontalAlignment="Left" Margin="185,200,0,0" VerticalAlignment="Top" Width="84" Click="btnGetUnits_Click"/>
         <Label x:Name="lblFillSucc" Content="Units filled successfully!" HorizontalAlignment="Left" Margin="276,196,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
         <Label x:Name="label4" Content="You can either fill the desired delay between attacks to calculate how many units will be needed or&#xD;&#xA;you can fill the units you have at your disposal to calculate how big of an delay you need to not run out of units" HorizontalAlignment="Left" Margin="10,158,0,0" VerticalAlignment="Top" Width="606"/>
+        <CheckBox x:Name="chckArteSmall" Content="Small Trainer" HorizontalAlignment="Left" Margin="78,142,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chckArteLarge" Content="Large Trainer" HorizontalAlignment="Left" Margin="176,142,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
